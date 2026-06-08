@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veykra Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f8fafc;
+      --foreground: #111827;
+      --muted: #4b5563;
+      --border: #d1d5db;
+      --accent: #2563eb;
+      --surface: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0b1020;
+        --foreground: #f9fafb;
+        --muted: #cbd5e1;
+        --border: #334155;
+        --accent: #8ab4ff;
+        --surface: #121827;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--foreground);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: clamp(24px, 5vw, 56px);
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    h2 {
+      margin-top: 36px;
+      font-size: 1.3rem;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Veykra Support</h1>
+      <p>Need help with Veykra? Contact support at <a href="mailto:support@veykra.ai">support@veykra.ai</a>.</p>
+
+      <h2>Account and billing</h2>
+      <p>For questions about Sign in with Apple, subscriptions, monthly credits, promotional credits, purchase state, refunds, or account access, email <a href="mailto:support@veykra.ai">support@veykra.ai</a>.</p>
+      <p>Subscriptions are managed through your Apple Account subscription settings. Deleting your Veykra account does not automatically cancel an Apple subscription.</p>
+
+      <h2>Generation and uploads</h2>
+      <p>For help with video import, cloud uploads, generation jobs, generated clips, captions, editor behavior, or export preparation, include the device platform, app version, source video length, and a short description of what happened.</p>
+      <p>Mock mode is available for testing and review. It does not intentionally upload source videos or consume credits.</p>
+
+      <h2>Privacy and deletion</h2>
+      <p>For privacy questions, account deletion, or data requests, contact <a href="mailto:privacy@veykra.ai">privacy@veykra.ai</a>. You can also request account deletion from inside the app.</p>
+
+      <h2>Feedback and feature requests</h2>
+      <p>For product feedback, creator workflow requests, and feature ideas, email <a href="mailto:support@veykra.ai">support@veykra.ai</a>.</p>
+    </article>
+  </main>
+</body>
+</html>

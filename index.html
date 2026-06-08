@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veykra</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f8fafc;
+      --foreground: #111827;
+      --muted: #4b5563;
+      --border: #d1d5db;
+      --accent: #2563eb;
+      --surface: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0b1020;
+        --foreground: #f9fafb;
+        --muted: #cbd5e1;
+        --border: #334155;
+        --accent: #8ab4ff;
+        --surface: #121827;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--foreground);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: clamp(24px, 5vw, 56px);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Veykra</h1>
+      <p>Veykra helps creators turn longer videos into short social clips with captions, editing controls, and AI-assisted generation.</p>
+      <p>For App Store launch review and customer support, use these required public pages:</p>
+      <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/support">Support</a></li>
+      </ul>
+      <p>Contact support at <a href="mailto:support@veykra.ai">support@veykra.ai</a>.</p>
+    </article>
+  </main>
+</body>
+</html>
